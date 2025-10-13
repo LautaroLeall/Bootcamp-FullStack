@@ -48,10 +48,24 @@ body {
     border-bottom: 1px solid var(--border);
 }
 
+.left-navbar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .title-logo {
     font-size: 1.3rem;
     font-weight: 700;
+    text-decoration: none;
+    transition: 0.2s color;
     color: var(--text-primary);
+}
+
+.title-logo:hover,
+.title-logo:focus {
+    color: var(--primary);
+    transition: 0.2s color;
 }
 
 .links-nav {
@@ -140,7 +154,7 @@ body {
     justify-content: center;
     margin-top: 1.5rem;
     padding: 0.5rem 1rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     background-color: var(--input-bg);
 }
 
