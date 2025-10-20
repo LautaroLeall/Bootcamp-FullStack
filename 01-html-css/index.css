@@ -58,14 +58,14 @@ body {
     font-size: 1.3rem;
     font-weight: 700;
     text-decoration: none;
-    transition: 0.2s color;
+    transition: 0.5s color;
     color: var(--text-primary);
 }
 
 .title-logo:hover,
 .title-logo:focus {
     color: var(--primary);
-    transition: 0.2s color;
+    transition: 0.3s color;
 }
 
 .links-nav {
@@ -78,13 +78,14 @@ body {
 .link-nav {
     text-decoration: none;
     color: var(--text-secondary);
-    transition: color 0.2s;
+    transition: all 0.3s;
 }
 
 .link-nav:hover,
 .link-nav:focus {
     color: var(--primary);
     outline: none;
+    transition: all 0.5s;
 }
 
 .btns-nav {
@@ -94,6 +95,12 @@ body {
     border-radius: 0.5rem;
     font-size: 0.9rem;
     font-weight: 700;
+    transition: all 0.3s;
+}
+
+.btns-nav:active {
+    transform: scale(0.95);
+    transition: all 0.5s;
 }
 
 .btn-nav-1 {
@@ -101,9 +108,23 @@ body {
     color: var(--primary-light);
 }
 
+.btn-nav-1:hover,
+.btn-nav-1:focus {
+    outline: 2px solid var(--primary-dark);
+    outline-offset: 1px;
+    transition: all 0.5s;
+}
+
 .btn-nav-2 {
     background-color: var(--primary);
     color: var(--text-primary);
+}
+
+.btn-nav-2:hover,
+.btn-nav-2:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 1px;
+    transition: all 0.5s;
 }
 
 /* MAIN */
@@ -192,6 +213,19 @@ body {
     border: none;
     padding: 0.8rem 1rem;
     border-radius: 0.5rem;
+    transition: all 0.3s;
+}
+
+.btn-hero:hover,
+.btn-hero:focus {
+    outline: 2px solid var(--primary-light);
+    outline-offset: 1px;
+    transition: all 0.5s;
+}
+
+.btn-hero:active {
+    transform: scale(0.95);
+    transition: all 0.5s;
 }
 
 /* HERO 2 */
