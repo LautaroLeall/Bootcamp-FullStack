@@ -69,14 +69,14 @@ body {
     font-size: 1.3rem;
     font-weight: 700;
     text-decoration: none;
-    transition: 0.2s color;
+    transition: 0.3s color;
     color: var(--text-primary);
 }
 
 .title-logo:hover,
 .title-logo:focus {
     color: var(--primary);
-    transition: 0.2s color;
+    transition: 0.5s color;
 }
 
 .links-nav {
@@ -96,13 +96,14 @@ body {
 .link-nav {
     text-decoration: none;
     color: var(--text-secondary);
-    transition: color 0.2s;
+    transition: color 0.3s;
 }
 
 .link-nav:hover,
 .link-nav:focus {
     color: var(--primary);
     outline: none;
+    transition: all 0.5s;
 }
 
 .btn-nav {
@@ -114,11 +115,31 @@ body {
     font-weight: 700;
     background-color: var(--primary-dark);
     color: var(--primary-light);
+    transition: all 0.3s;
+}
+
+.btn-nav:hover,
+.btn-nav:focus {
+    outline: 2px solid var(--primary-dark);
+    outline-offset: 1px;
+    transition: all 0.5s;
+}
+
+.btn-nav:active {
+    transform: scale(0.95);
+    transition: all 0.5s;
 }
 
 .user-logo {
     display: flex;
     align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.user-logo:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
 }
 
 .user-nav {
@@ -262,6 +283,18 @@ body {
     font-weight: 700;
 }
 
+.btn-card:hover,
+.btn-card:focus {
+    outline: 2px solid var(--primary-light);
+    outline-offset: 1px;
+    transition: all 0.5s;
+}
+
+.btn-card:active {
+    transform: scale(0.95);
+    transition: all 0.5s;
+}
+
 .subtitle-card {
     color: var(--text-secondary);
     font-size: 0.9rem;
@@ -270,6 +303,36 @@ body {
 
 .bottom {
     line-height: 1.8;
+}
+
+/* PAGINATION */
+.pagination {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn-pagination {
+    background-color: transparent;
+    color: var(--text-primary);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-pagination.active {
+    background-color: var(--primary-light);
+    pointer-events: none;
+}
+
+.btn-pagination:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
 }
 
 /* HR LINE */
