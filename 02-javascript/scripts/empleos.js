@@ -35,3 +35,16 @@ sectionCards?.addEventListener("click", (e) => {
         element.disabled = true;
     }
 });
+
+// Detalles de empleos
+// Precionar card y llevar a detalles.html
+const detail = document.querySelector("#card-1");
+
+// Pregunta si es Null o undefined para no Ejecutar el codigo
+detail?.addEventListener("click", (e) => {
+    const element = e.target;
+
+    if (element.classList.contains("card-1")) {
+        window.location.href = "./pages/detalles.html";
+    }
+});
