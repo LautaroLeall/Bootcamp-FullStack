@@ -37,14 +37,13 @@ sectionCards?.addEventListener("click", (e) => {
 });
 
 // Detalles de empleos
-// Precionar card y llevar a detalles.html
+// Presionar card y llevar a detalles.html
 const detail = document.querySelector("#card-1");
 
-// Pregunta si es Null o undefined para no Ejecutar el codigo
 detail?.addEventListener("click", (e) => {
-    const element = e.target;
+    // Evita la redirección si el clic fue en el botón
+    if (e.target.classList.contains("btn-card")) return;
 
-    if (element.classList.contains("card-1")) {
-        window.location.href = "./pages/detalles.html";
-    }
+    // Redirige al hacer clic en cualquier otra parte de la card
+    window.location.href = "./detalles.html";
 });
