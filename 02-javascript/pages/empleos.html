@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/empleo.css">
+    <script src="../scripts/empleos.js" type="module"></script>
+    <title>DevJobs - Empleos</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="left-navbar">
+                <div class="logo-navbar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#09f"
+                        class="icon icon-tabler icons-tabler-filled icon-tabler-flower">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M12 1a4 4 0 0 1 4 4l-.002 .055l.03 -.018a3.97 3.97 0 0 1 2.79 -.455l.237 .056a3.97 3.97 0 0 1 2.412 1.865a4.01 4.01 0 0 1 -1.455 5.461l-.068 .036l.071 .039a4.01 4.01 0 0 1 1.555 5.27l-.101 .186a3.97 3.97 0 0 1 -5.441 1.468l-.03 -.02l.002 .057a4 4 0 0 1 -3.8 3.995l-.2 .005a4 4 0 0 1 -4 -4l.001 -.056l-.029 .019a3.97 3.97 0 0 1 -2.79 .456l-.236 -.056a3.97 3.97 0 0 1 -2.413 -1.865a4.01 4.01 0 0 1 1.453 -5.46l.07 -.038l-.071 -.038a4.01 4.01 0 0 1 -1.555 -5.27l.1 -.187a3.97 3.97 0 0 1 5.444 -1.468l.026 .018v-.055a4 4 0 0 1 3.8 -3.995zm0 8a3 3 0 1 0 0 6a3 3 0 0 0 0 -6" />
+                    </svg>
+                    <a href="../index.html" class="title-logo">DevJobs</a>
+                </div>
+                <ul class="links-nav links-nav-left">
+                    <li>
+                        <a href="#" class="link-nav">Buscar</a>
+                    </li>
+                    <li>
+                        <a href="./empleos.html" class="link-nav">Empleos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-nav">Empresas</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-nav">Salarios</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-navbar">
+                <ul class="links-nav links-nav-right">
+                    <li>
+                        <a href="#" class="btn-nav">Subir CV</a>
+                    </li>
+                    <li class="user-logo">
+                        <img src="../assets/user-logo.png" alt="user" class="user-nav" />
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container-main">
+            <div class="text-empleos">
+                <h1 class="title-main">Encuentra tu proximo trabajo</h1>
+                <p class="subtitle-main">Explora miles de oportunidades en el sector tecnológico</p>
+            </div>
+            <div class="form-empleos">
+                <form class="input" role="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                        <path d="M21 21l-6 -6" />
+                    </svg>
+                    <input class="input-empleos" type="text" required
+                        placeholder="Buscar trabajos, empresas o habilidades" />
+                </form>
+                <div class="selects">
+                    <select class="select-empleos" name="tecnologia" id="tecnologia">
+                        <option value="tecnologia">Tecnología</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="react">React</option>
+                    </select>
+                    <select class="select-empleos" name="ubicacion" id="ubicacion">
+                        <option value="ubicacion">Ubicación</option>
+                        <option value="españa">España</option>
+                        <option value="mexico">México</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="chile">Chile</option>
+                    </select>
+                    <select class="select-empleos" name="tipo-contrato" id="tipo-contrato">
+                        <option value="tipo-contrato">Tipo de contrato</option>
+                        <option value="permanente">Permanente</option>
+                        <option value="contractual">Contractual</option>
+                        <option value="indefinida">Indefinida</option>
+                    </select>
+                    <select class="select-empleos" name="experiencia" id="experiencia">
+                        <option value="experiencia">Experiencia</option>
+                        <option value="1">1 a 2 años</option>
+                        <option value="2">2 a 3 años</option>
+                        <option value="3">3 a 5 años</option>
+                        <option value="4">5 a 10 años</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="resultados-section">
+            <div class="second-text">
+                <h2 class="title-second">Resultados de búsqueda</h2>
+            </div>
+            <section class="section-cards">
+                <div class="card" id="card-1">
+                    <div class="top">
+                        <h3 class="title-card">Ingeniero de Software</h3>
+                        <button class="btn-card">Aplicar</button>
+                    </div>
+                    <div class="main">
+                        <p class="subtitle-card">Teach Solutions Inc. | Remoto</p>
+                    </div>
+                    <div class="bottom">
+                        <p>
+                            Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en
+                            JavaScript, HTML, CSS y React. El candidato ideal debe ser capaz de trabajar en equipo y
+                            tener buenas habilidades de comunicacion.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="top">
+                        <h3 class="title-card">Analista de Datos</h3>
+                        <button class="btn-card">Aplicar</button>
+                    </div>
+                    <div class="main">
+                        <p class="subtitle-card">Data Driven Co. | Ciudad de Mexico</p>
+                    </div>
+                    <div class="bottom">
+                        <p>
+                            Estamos buscando un analista de datos con experiencia en el manejo de grandes conjuntos de
+                            datos y herramientas de visualizacion. Se requiere conocimientos en SQL, Python y R.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="top">
+                        <h3 class="title-card">Desarrollador de Aplicaciones Moviles</h3>
+                        <button class="btn-card">Aplicar</button>
+                    </div>
+                    <div class="main">
+                        <p class="subtitle-card">Mobile Apps Ltd. | Guadalajara</p>
+                    </div>
+                    <div class="bottom">
+                        <p>
+                            Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en
+                            JavaScript, HTML, CSS y React. El candidato ideal debe ser capaz de trabajar en equipo y
+                            tener buenas habilidades de comunicacion.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-last">
+                    <div class="top">
+                        <h3 class="title-card">Ingeniero de DevOps</h3>
+                        <button class="btn-card">Aplicar</button>
+                    </div>
+                    <div class="main">
+                        <p class="subtitle-card">Cloud Services SA | Remoto</p>
+                    </div>
+                    <div class="bottom">
+                        <p>
+                            Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en
+                            JavaScript, HTML, CSS y React. El candidato ideal debe ser capaz de trabajar en equipo y
+                            tener buenas habilidades de comunicacion.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <div class="pagination">
+                <button class="btn-pagination">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M15 6l-6 6l6 6" />
+                    </svg>
+                </button>
+                <button class="btn-pagination active">1</button>
+                <button class="btn-pagination">2</button>
+                <button class="btn-pagination">3</button>
+                <button class="btn-pagination">4</button>
+                <button class="btn-pagination">5</button>
+                <button class="btn-pagination">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M9 6l6 6l-6 6" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <hr class="hr-body">
+
+    <footer>
+        <div class="container-footer">
+            <p class="text-footer">&copy; 2025 DevJobs. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
