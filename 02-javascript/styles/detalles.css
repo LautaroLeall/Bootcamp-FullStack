@@ -200,10 +200,12 @@ body {
 }
 
 .first-route {
+    cursor: pointer;
     color: var(--text-muted);
 }
 
 .second-route {
+    cursor: default;
     color: var(--text-primary);
 }
 
@@ -263,20 +265,68 @@ body {
     gap: 0.5rem;
 }
 
-.list-responsibilities{
+.list-responsibilities {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.item-responsibilities{
+.item-responsibilities {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
+.apply-now.main {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.apply-now-btn {
+    background-color: var(--primary-light);
+    color: var(--text-primary);
+    border: none;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.apply-now-btn:hover,
+.apply-now-btn:focus {
+    outline: 2px solid var(--primary-light);
+    outline-offset: 1px;
+    transition: all 0.5s;
+}
+
+.apply-now-btn:active {
+    transform: scale(0.95);
+    transition: all 0.5s;
+}
+
+/* estado aplicado */
+.btn-card.applied {
+    background-color: #003f00;
+    color: var(--text-secondary);
+    pointer-events: none;
+    opacity: 0.85;
+}
+
+.btn-card.applied:hover {
+    transform: none;
+}
+
 /* HR LINE */
+.hr-main {
+    margin: 2.5rem 0;
+    border: none;
+    height: 1px;
+    background-color: var(--border);
+}
+
 .hr-body {
     margin: 5rem 0 0 0;
     border: none;
