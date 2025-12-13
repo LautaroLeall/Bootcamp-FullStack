@@ -56,8 +56,8 @@
                 <h1 class="title-main">Encuentra tu proximo trabajo</h1>
                 <p class="subtitle-main">Explora miles de oportunidades en el sector tecnológico</p>
             </div>
-            <div class="form-empleos">
-                <form class="input" role="search">
+            <form class="form-empleos" id="empleos-search-form" role="search">
+                <div class="input-empleos-form">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
                         class="icon icon-tabler icons-tabler-outline icon-tabler-search">
@@ -65,10 +65,10 @@
                         <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
                         <path d="M21 21l-6 -6" />
                     </svg>
-                    <input class="input-empleos" type="text" required
+                    <input class="input-empleos" id="empleos-search-input" type="text" name="search" required
                         placeholder="Buscar trabajos, empresas o habilidades" />
-                </form>
-                <div class="selects">
+                </div>
+                <div class="selects" id="category">
                     <select class="select-empleos" name="tecnologia" id="tecnologia">
                         <option value="tecnologia">Tecnología</option>
                         <option value="html">HTML</option>
@@ -92,14 +92,18 @@
                     </select>
                     <select class="select-empleos" name="experiencia" id="experiencia">
                         <option value="experiencia">Experiencia</option>
-                        <option value="1">1 a 2 años</option>
-                        <option value="2">2 a 3 años</option>
-                        <option value="3">3 a 5 años</option>
-                        <option value="4">5 a 10 años</option>
+                        <option value="1-2">1 a 2 años</option>
+                        <option value="2-3">2 a 3 años</option>
+                        <option value="3-5">3 a 5 años</option>
+                        <option value="5-10">5 a 10 años</option>
                     </select>
                 </div>
-            </div>
+            </form>
+
+            <span id="filter-result"></span>
+
         </section>
+
 
         <section class="resultados-section">
             <div class="second-text">
