@@ -47,3 +47,47 @@ detail?.addEventListener("click", (e) => {
     // Redirige al hacer clic en cualquier otra parte de la card
     window.location.href = "./detalles.html";
 });
+
+// Select - Options
+// Filtrar empleos por UBICACION
+const filter = document.querySelector("#ubicacion");
+const mensaje = document.querySelector("#filter-result");
+
+filter?.addEventListener('change', function () {
+    const selectedValue = filter.value;
+
+    if (selectedValue) {
+        mensaje.textContent = `Has seleccionado: ${selectedValue}`;
+    } else {
+        mensaje.textContent = '';
+    }
+});
+
+// Input - Buscar empleos
+const searchInput = document.querySelector("#empleos-search-input");
+
+searchInput?.addEventListener("input", function () {
+    // cada vez que el usuario cambia algo en el input (escribe o borra)
+    console.log("Buscando empleos para:", searchInput.value);
+});
+
+searchInput?.addEventListener("blur", function () {
+    // cada vez que el usuario deja el input (pierde el foco)
+    console.log("Has dejado el input");
+});
+
+// Form - Buscar empleos
+const searchForm = document.querySelector("#empleos-search-form");
+
+searchForm?.addEventListener("submit", function (e) {
+    // Evita la redirección si el usuario presiona Enter
+    e.preventDefault();
+
+    console.log("Formulario enviado");
+});
+
+// Evento global - Teclado
+document.addEventListener("keydown", (e) => {
+    // Tecla presionada
+    console.log("Tecla presionada:", e.key);
+});
