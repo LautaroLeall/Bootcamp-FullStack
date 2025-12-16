@@ -287,14 +287,14 @@ body {
 
 .btn-card:hover,
 .btn-card:focus {
-    outline: 2px solid var(--primary-light);
+    outline: 1.5px solid var(--primary-light);
     outline-offset: 1px;
     transition: all 0.5s;
 }
 
 .btn-card:active {
     transform: scale(0.95);
-    transition: all 0.5s;
+    transition: all 0.5s ease-in-out;
 }
 
 /* estado aplicado */
@@ -302,10 +302,12 @@ body {
     background-color: #003f00;
     color: var(--text-secondary);
     pointer-events: none;
+    cursor: default;
     opacity: 0.85;
 }
 
-.btn-card.applied:hover {
+.btn-card.applied:hover,
+.btn-card.applied:focus {
     transform: none;
 }
 
